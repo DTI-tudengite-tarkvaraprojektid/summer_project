@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -10,17 +10,20 @@
     <StackLayout>
         <gauge:SfCircularGauge IsCenterAligned="True" Margin="10">
         <gauge:SfCircularGauge.Scales>
-            <gauge:Scale ShowTicks="False" StartAngle="180" SweepAngle="180" StartValue="0" EndValue="100">
-                <gauge:Scale.Ranges>
-                    <gauge:Range StartValue="0" EndValue="25" Color="Green"/>
-                    <gauge:Range StartValue="25" EndValue="50" Color="Yellow"/>
-                    <gauge:Range StartValue="50" EndValue="75" Color="Orange"/>
-                    <gauge:Range StartValue="75" EndValue="100" Color="Red"/>
-                </gauge:Scale.Ranges>
-                <gauge:Scale.Pointers>
-                    <gauge:NeedlePointer x:Name="pointer" Value="0" Thickness="7" KnobRadius = "15" TailColor="#757575" TailLengthFactor="0.2" TailStrokeWidth="1" TailStrokeColor="#757575" EnableAnimation="false" EnableDragging="true" />
-                </gauge:Scale.Pointers>
-            </gauge:Scale>
+                <gauge:Scale StartAngle="180" SweepAngle="180" StartValue="0" EndValue="100">
+                    <gauge:Scale.MajorTickSettings>
+                        <gauge:TickSettings Thickness="4" Length="5" Offset="0.97"/>
+                    </gauge:Scale.MajorTickSettings>
+                    <gauge:Scale.Ranges>
+                        <gauge:Range StartValue="0" EndValue="25" Color="Green"/>
+                        <gauge:Range StartValue="25" EndValue="50" Color="Yellow"/>
+                        <gauge:Range StartValue="50" EndValue="75" Color="Orange"/>
+                        <gauge:Range StartValue="75" EndValue="100" Color="Red"/>
+                    </gauge:Scale.Ranges>
+                    <gauge:Scale.Pointers>
+                        <gauge:NeedlePointer x:Name="pointer" Value="0" Thickness="7" KnobRadius = "15" TailColor="#757575" TailLengthFactor="0.2" TailStrokeWidth="1" TailStrokeColor="#757575" EnableAnimation="false" EnableDragging="true" />
+                    </gauge:Scale.Pointers>
+                </gauge:Scale>
         </gauge:SfCircularGauge.Scales>
         <gauge:SfCircularGauge.Headers>
             <gauge:Header Text="{Binding Value, Source={Reference pointer}}" ForegroundColor="Black" TextSize="20" />
@@ -29,10 +32,22 @@
     
     <Button x:Name ="Inc" Text="increase" Clicked="Inc_Click"/>
     <Button x:Name ="Dec" Text="decrease" Clicked="Dec_Click"/>
-
+        <Label x:Name="diceLabel"/>
+        <Image Source="dice1.png"
+                ClassId="diceImageId"
+                WidthRequest="75" 
+                HeightRequest="75" 
+                x:Name="diceImage">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                        Tapped="Roll"
+                        NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
 
 
     </StackLayout>
     
     
 </ContentPage>
+

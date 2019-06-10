@@ -15,13 +15,13 @@
                         <gauge:TickSettings Thickness="4" Length="5" Offset="0.97"/>
                     </gauge:Scale.MajorTickSettings>
                     <gauge:Scale.Ranges>
-                        <gauge:Range StartValue="0" EndValue="25" Color="Green"/>
-                        <gauge:Range StartValue="25" EndValue="50" Color="Yellow"/>
-                        <gauge:Range StartValue="50" EndValue="75" Color="Orange"/>
-                        <gauge:Range StartValue="75" EndValue="100" Color="Red"/>
+                        <gauge:Range StartValue="0" EndValue="25" Color="Red"/>
+                        <gauge:Range StartValue="25" EndValue="50" Color="Orange"/>
+                        <gauge:Range StartValue="50" EndValue="75" Color="Yellow"/>
+                        <gauge:Range StartValue="75" EndValue="100" Color="Green"/>
                     </gauge:Scale.Ranges>
                     <gauge:Scale.Pointers>
-                        <gauge:NeedlePointer x:Name="pointer" Value="0" Thickness="7" KnobRadius = "15" TailColor="#757575" TailLengthFactor="0.2" TailStrokeWidth="1" TailStrokeColor="#757575" EnableAnimation="false" EnableDragging="true" />
+                        <gauge:NeedlePointer x:Name="pointer" Value="100" Thickness="7" KnobRadius = "15" TailColor="#757575" TailLengthFactor="0.2" TailStrokeWidth="1" TailStrokeColor="#757575" EnableAnimation="false" EnableDragging="true" />
                     </gauge:Scale.Pointers>
                 </gauge:Scale>
         </gauge:SfCircularGauge.Scales>

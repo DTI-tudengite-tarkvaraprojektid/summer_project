@@ -8,8 +8,7 @@ using Xamarin.Forms;
 
 namespace WorldEnd_Clock
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
+
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -21,26 +20,28 @@ namespace WorldEnd_Clock
             InitializeComponent();
         }
 
-        private void Inc_Click(object sender, EventArgs e)
+       private void Inc_Click(object sender, EventArgs e)
         {
             i += 1;
             pointer.Value = Convert.ToDouble(i);
             checkDivide = Convert.ToInt32(pointer.Value);
-            if (checkDivide % 5 == 0 && checkDivide != 0)
+            if (checkDivide % 5 == 0 && checkDivide != 0 && checkDivide != 100)
             {
                 DisplayAlert("Alert", "Dividable!", "OK");
             }
-            if (pointer.Value == 25)
+            if (pointer.Value >= 100)
             {
-                DisplayAlert("Alert", "Value is 25!", "OK");
+                i = 100;
+                pointer.Value = 100;
+            }
+            if (pointer.Value <= 0)
+            {
+                i = 0;
+                pointer.Value = 0;
             }
             if (pointer.Value == 50)
             {
                 DisplayAlert("Alert", "Value is 50!", "OK");
-            }
-            if (pointer.Value == 75)
-            {
-                DisplayAlert("Alert", "Value is 75!", "OK");
             }
             if (pointer.Value == 100)
             {
@@ -52,21 +53,23 @@ namespace WorldEnd_Clock
             i -= 1;
             pointer.Value = Convert.ToDouble(i);
             checkDivide = Convert.ToInt32(pointer.Value);
-            if (checkDivide % 5 == 0 && checkDivide != 0)
+            if (checkDivide % 5 == 0 && checkDivide != 0 && checkDivide != 100)
             {
                 DisplayAlert("Alert", "Dividable!", "OK");
             }
-            if (pointer.Value == 25)
+            if (pointer.Value > 100)
             {
-                DisplayAlert("Alert", "Value is 25!", "OK");
+                i = 100;
+                pointer.Value = 100;
+            }
+            if (pointer.Value < 0)
+            {
+                i = 0;
+                pointer.Value = 0;
             }
             if (pointer.Value == 50)
             {
                 DisplayAlert("Alert", "Value is 50!", "OK");
-            }
-            if (pointer.Value == 75)
-            {
-                DisplayAlert("Alert", "Value is 75!", "OK");
             }
             if (pointer.Value == 100)
             {

@@ -34,11 +34,6 @@ namespace WorldEnd_Clock
                 i = 100;
                 pointer.Value = 100;
             }
-            if (pointer.Value <= 0)
-            {
-                i = 0;
-                pointer.Value = 0;
-            }
             if (pointer.Value == 50)
             {
                 DisplayAlert("Alert", "Value is 50!", "OK");
@@ -57,15 +52,13 @@ namespace WorldEnd_Clock
             {
                 DisplayAlert("Alert", "Dividable!", "OK");
             }
-            if (pointer.Value > 100)
-            {
-                i = 100;
-                pointer.Value = 100;
-            }
-            if (pointer.Value < 0)
+            if (pointer.Value < 1)
             {
                 i = 0;
                 pointer.Value = 0;
+                DisplayAlert("Alert", "Game over!", "OK");
+                i = 100;
+                pointer.Value = 100;
             }
             if (pointer.Value == 50)
             {

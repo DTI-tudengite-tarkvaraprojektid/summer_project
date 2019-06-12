@@ -32,20 +32,36 @@
     
     <Button x:Name ="Inc" Text="increase" Clicked="Inc_Click"/>
     <Button x:Name ="Dec" Text="decrease" Clicked="Dec_Click"/>
-        <Label x:Name="diceLabel"/>
-        <Image Source="dice1.png"
+        
+        <Label XAlign="Center" x:Name="diceLabel"/>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="dice1.png"
                 ClassId="diceImageId"
                 WidthRequest="75" 
                 HeightRequest="75" 
                 x:Name="diceImage">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
                         Tapped="Roll"
                         NumberOfTapsRequired="1" />
-            </Image.GestureRecognizers>
-        </Image>
+                </Image.GestureRecognizers>
 
+            </Image>
+            <Image Source="camera.jpeg"
+                ClassId="diceImageId"
+                WidthRequest="75" 
+                HeightRequest="75" 
+                x:Name="cameraImage">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="Scan"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
 
+            </Image>
+        </StackLayout>
+        <Entry x:Name="txtBarcode"  
+               Placeholder="Text Do scan"/>
     </StackLayout>
     
     

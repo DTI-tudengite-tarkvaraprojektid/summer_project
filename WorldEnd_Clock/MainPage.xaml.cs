@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using WorldEnd_Clock.Service;
 
 namespace WorldEnd_Clock
 {
@@ -12,7 +13,7 @@ namespace WorldEnd_Clock
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        int i = 0;
+        int i = 100;
         int currentRoll = 0;
         int checkDivide;
         public MainPage()
@@ -113,11 +114,28 @@ namespace WorldEnd_Clock
                     diceImage.Source = "dice1.png";
                     break;
             }
-
-
-
+        }
+        private void Scan(object sender, System.EventArgs e)
+        {
+            ScanQR();
         }
 
+        private async void ScanQR()
+        {
+            try
+            {
+                var scanner = DependencyService.Get<IQrScanningService>();
+                var result = await scanner.ScanAsync();
+                if (result != null)
+                {
+                    txtBarcode.Text = result;
+                }
+            }
+            catch (Exception ex)
+            {
 
+                throw;
+            }
+        }
     }
 }

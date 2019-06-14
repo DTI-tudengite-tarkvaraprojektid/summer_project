@@ -8,6 +8,8 @@
              mc:Ignorable="d"
              x:Class="WorldEnd_Clock.MainPage">
     <StackLayout>
+      <!-- <Label>Cards</Label>
+        <Picker x:Name="ddlCards"></Picker> -->
         <StackLayout Orientation="Horizontal">
             <Label XAlign="Start" x:Name="labelNeg" FontSize="Large"></Label>
             <Label XAlign="End" x:Name="labelPos" FontSize="Large"></Label>

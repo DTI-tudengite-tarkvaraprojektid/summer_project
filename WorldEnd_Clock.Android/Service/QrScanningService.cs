@@ -27,11 +27,16 @@ namespace WorldEnd_Clock.Droid.Service
             var scanner = new MobileBarcodeScanner()
             {
                 TopText = "Scan the QR Code",
-                BottomText = "Please Wait",
+                BottomText = "Please Wait"
             };
 
             var scanResult = await scanner.Scan(optionsCustom);
-            return scanResult.Text;
+            if(scanResult == null) {
+                return "";
+            } else {
+                return scanResult.Text;
+            }
+            
         }
     }
 }

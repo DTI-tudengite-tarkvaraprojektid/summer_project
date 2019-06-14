@@ -34,7 +34,7 @@
     <Button x:Name ="Dec" Text="decrease" Clicked="Dec_Click"/>
         
         <Label XAlign="Center" x:Name="diceLabel"/>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal" Spacing="210">
             <Image Source="dice1.png"
                 ClassId="diceImageId"
                 WidthRequest="75" 

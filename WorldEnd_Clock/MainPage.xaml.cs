@@ -21,12 +21,10 @@ namespace WorldEnd_Clock
             InitializeComponent();
         }
 
-       private void Inc_Click(object sender, EventArgs e)
+        private void Change_Pointer_Value(double pointerValue)
         {
-            i += 1;
-            pointer.Value = Convert.ToDouble(i);
-            checkDivide = Convert.ToInt32(pointer.Value);
-            if (checkDivide % 5 == 0 && checkDivide != 0 && checkDivide != 100)
+            checkDivide = Convert.ToInt32(pointerValue);
+            if (checkDivide % 5 == 0 && 0 < checkDivide  && checkDivide < 100)
             {
                 DisplayAlert("Alert", "Dividable!", "OK");
             }
@@ -44,31 +42,18 @@ namespace WorldEnd_Clock
                 DisplayAlert("Alert", "Value is 100!", "OK");
             }
         }
+
+        private void Inc_Click(object sender, EventArgs e)
+        {
+            i += 1;
+            pointer.Value = Convert.ToDouble(i);
+            Change_Pointer_Value(pointer.Value);
+        }
         private void Dec_Click(object sender, EventArgs e)
         {
             i -= 1;
             pointer.Value = Convert.ToDouble(i);
-            checkDivide = Convert.ToInt32(pointer.Value);
-            if (checkDivide % 5 == 0 && checkDivide != 0 && checkDivide != 100)
-            {
-                DisplayAlert("Alert", "Dividable!", "OK");
-            }
-            if (pointer.Value < 1)
-            {
-                i = 0;
-                pointer.Value = 0;
-                DisplayAlert("Alert", "Game over!", "OK");
-                i = 100;
-                pointer.Value = 100;
-            }
-            if (pointer.Value == 50)
-            {
-                DisplayAlert("Alert", "Value is 50!", "OK");
-            }
-            if (pointer.Value == 100)
-            {
-                DisplayAlert("Alert", "Value is 100!", "OK");
-            }
+            Change_Pointer_Value(pointer.Value);
         }
         private void Roll(object sender, System.EventArgs e)
         {

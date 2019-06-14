@@ -22,7 +22,30 @@ namespace WorldEnd_Clock
         {
             InitializeComponent();
         }
+        
+        /*
+         protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            DatabaseManager dbman = new DatabaseManager();
+            var cards = dbman.GetAllCards();
+            List<Cards> ddlSource = new List<Cards>();
+            foreach (var item in cards)
+            {
+                ddlCards.Items.Add(item.Id);
+                ddlCards.Items.Add(item.Kategooria);
+                ddlCards.Items.Add(item.Loodusvarad);
+                ddlCards.Items.Add(item.Nimetus);
+                ddlCards.Items.Add(item.Elustik);
+                ddlCards.Items.Add(item.Turism);
+                ddlCards.Items.Add(item.Rahuolu);
+                ddlCards.Items.Add(item.Skoor);
+                ddlCards.Items.Add(item.Kirjeldus);
 
+            }
+        }
+        */
+        
         private void Change_Pointer_Value(double pointerValue)
         {
             checkDivide = Convert.ToInt32(pointerValue);

@@ -15,6 +15,8 @@ namespace WorldEnd_Clock
     {
         int i = 100;
         int currentRoll = 0;
+        int negCounter = 0;
+        int posCounter = 0;
         int checkDivide;
         public MainPage()
         {
@@ -41,17 +43,37 @@ namespace WorldEnd_Clock
             {
                 DisplayAlert("Alert", "Value is 100!", "OK");
             }
+            if(pointer.Value <= 0)
+            {
+                i = 0;
+                pointer.Value = 0;
+                DisplayAlert("Alert", "Game over!", "OK");
+                i = 100;
+                pointer.Value = 100;
+                posCounter = negCounter = 0;
+                labelPos.Text = labelNeg.Text = "";
+            }
         }
 
         private void Inc_Click(object sender, EventArgs e)
         {
-            i += 1;
+            if (i < 100)
+            {
+                posCounter++;
+                labelPos.Text = "+" + Convert.ToString(posCounter);
+            }
+            i++;
             pointer.Value = Convert.ToDouble(i);
             Change_Pointer_Value(pointer.Value);
         }
         private void Dec_Click(object sender, EventArgs e)
         {
-            i -= 1;
+            if (i > 0)
+            {
+                negCounter++;
+                labelNeg.Text = "-" + Convert.ToString(negCounter);
+            }
+            i--;
             pointer.Value = Convert.ToDouble(i);
             Change_Pointer_Value(pointer.Value);
         }
@@ -111,7 +133,6 @@ namespace WorldEnd_Clock
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }

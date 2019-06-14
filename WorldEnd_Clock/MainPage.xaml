@@ -8,8 +8,12 @@
              mc:Ignorable="d"
              x:Class="WorldEnd_Clock.MainPage">
     <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label XAlign="Start" x:Name="labelNeg" FontSize="Large"></Label>
+            <Label XAlign="End" x:Name="labelPos" FontSize="Large"></Label>
+        </StackLayout>
         <gauge:SfCircularGauge IsCenterAligned="True" Margin="10">
-        <gauge:SfCircularGauge.Scales>
+            <gauge:SfCircularGauge.Scales>
                 <gauge:Scale StartAngle="180" SweepAngle="180" StartValue="0" EndValue="100">
                     <gauge:Scale.MajorTickSettings>
                         <gauge:TickSettings Thickness="4" Length="5" Offset="0.97"/>
@@ -21,20 +25,20 @@
                         <gauge:Range StartValue="75" EndValue="100" Color="Green"/>
                     </gauge:Scale.Ranges>
                     <gauge:Scale.Pointers>
-                        <gauge:NeedlePointer x:Name="pointer" Value="100" Thickness="7" KnobRadius = "15" TailColor="#757575" TailLengthFactor="0.2" TailStrokeWidth="1" TailStrokeColor="#757575" EnableAnimation="false" EnableDragging="true" />
+                        <gauge:NeedlePointer x:Name="pointer" Value="100" Thickness="7" KnobRadius = "15" TailColor="#757575" TailLengthFactor="0.2" TailStrokeWidth="1" TailStrokeColor="#757575" EnableAnimation="false" EnableDragging="False" />
                     </gauge:Scale.Pointers>
                 </gauge:Scale>
-        </gauge:SfCircularGauge.Scales>
-        <gauge:SfCircularGauge.Headers>
-            <gauge:Header Text="{Binding Value, Source={Reference pointer}}" ForegroundColor="Black" TextSize="20" />
-        </gauge:SfCircularGauge.Headers>
-    </gauge:SfCircularGauge>
-    
-    <Button x:Name ="Inc" Text="increase" Clicked="Inc_Click"/>
-    <Button x:Name ="Dec" Text="decrease" Clicked="Dec_Click"/>
-        
+            </gauge:SfCircularGauge.Scales>
+            <gauge:SfCircularGauge.Headers>
+                <gauge:Header Text="{Binding Value, Source={Reference pointer}}" ForegroundColor="Black" TextSize="20" />
+            </gauge:SfCircularGauge.Headers>
+        </gauge:SfCircularGauge>
+
+        <Button x:Name ="Inc" Text="increase" Clicked="Inc_Click"/>
+        <Button x:Name ="Dec" Text="decrease" Clicked="Dec_Click"/>
+
         <Label XAlign="Center" x:Name="diceLabel"/>
-        <StackLayout Orientation="Horizontal" Spacing="210">
+        <StackLayout Orientation="Horizontal" Spacing="42">
             <Image Source="dice1.png"
                 ClassId="diceImageId"
                 WidthRequest="75" 
@@ -45,8 +49,9 @@
                         Tapped="Roll"
                         NumberOfTapsRequired="1" />
                 </Image.GestureRecognizers>
-
             </Image>
+            <Entry x:Name="txtBarcode"  
+               Placeholder="Text Do scan"/>
             <Image Source="camera.jpeg"
                 ClassId="diceImageId"
                 WidthRequest="75" 
@@ -57,13 +62,8 @@
                         Tapped="Scan"
                         NumberOfTapsRequired="1" />
                 </Image.GestureRecognizers>
-
             </Image>
         </StackLayout>
-        <Entry x:Name="txtBarcode"  
-               Placeholder="Text Do scan"/>
     </StackLayout>
-    
-    
 </ContentPage>
 

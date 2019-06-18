@@ -8,8 +8,8 @@ namespace WorldEnd_Clock
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTEyMDM1QDMxMzcyZTMxMmUzMGRJL1dDOXJubWJJamE5bnAwU0lKcEtFY2t4cWppMktNT3JFMTdubXZsN0E9");
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 

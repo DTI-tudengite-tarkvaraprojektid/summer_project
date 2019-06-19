@@ -1,11 +1,11 @@
 # Maailmalõpukell
-Tellijad: Triinu Jesmin, Jaagup Terasmaa
-Tarnijad: Andreas Malleus, Daniel Golubkov, Robin Rannavete, Martin Tšerdantsev
+Tellijad: Triinu Jesmin, Jaagup Terasmaa<br>
+Tarnijad: Andreas Malleus, Daniel Golubkov, Robin Rannavete, Martin Tšerdantsev<br>
 
-Projekti eesmärk on  ELU projekti maailmalõpu lauamängule maailmalõpukella rakendus arendada. 
-Rakenduses saab kella väärtust muuta, mängukaarte skaneerida ja tagastatud väärtuse järgi kaarte andmebaasist võtta. 
-Andmebaasist võetud kaarte kuvatakse ekraanil ja nende väärtus lisatakse kellale juurde. 
-Iga kord kui kella väärtus jagub 5-ga, võetakse vastav kaart andmebaasist. Kui kell liigub üles, võetakse positiivse mõjuga kaart, kui alla, negatiivse mõjuga kaart.
+Projekti eesmärk on  ELU projekti maailmalõpu lauamängule maailmalõpukella rakendus arendada. <br>
+Rakenduses saab kella väärtust muuta, mängukaarte skaneerida ja tagastatud väärtuse järgi kaarte andmebaasist võtta. <br>
+Andmebaasist võetud kaarte kuvatakse ekraanil ja nende väärtus lisatakse kellale juurde. <br>
+Iga kord kui kella väärtus jagub 5-ga, võetakse vastav kaart andmebaasist. Kui kell liigub üles, võetakse positiivse mõjuga kaart, kui alla, negatiivse mõjuga kaart.<br>
 
 Kasutatud tehnoloogiad:<br>
 Visual Studio 2019 Community Edition<br>

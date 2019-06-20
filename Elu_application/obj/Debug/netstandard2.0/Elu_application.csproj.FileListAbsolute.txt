@@ -1,0 +1,15 @@
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/bin/Debug/netstandard2.0/Elu_application.deps.json
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/bin/Debug/netstandard2.0/Elu_application.dll
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/bin/Debug/netstandard2.0/Elu_application.pdb
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/Elu_application.csprojAssemblyReference.cache
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/NegCardPage.xaml.g.cs
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/PosCardPage.xaml.g.cs
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/ScannedCardPage.xaml.g.cs
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/Elu_application.csproj.CoreCompileInputs.cache
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/Elu_application.AssemblyInfoInputs.cache
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/Elu_application.AssemblyInfo.cs
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/Elu_application.dll
+/Users/andreasmalleus/Projects/Elu_application/Elu_application/obj/Debug/netstandard2.0/Elu_application.pdb

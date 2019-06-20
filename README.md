@@ -24,7 +24,7 @@ Kasutatud tehnoloogiad:<br>
 Projekti panustasid:<br>
 1. Andreas Malleus - arendaja, tiimijuht, lõpuleviija <b> (viide: https://github.com/Andreasmalleus) </b><br>
 2. Daniel Golubkov - arendaja, koodi disainer <b> (viide: https://github.com/dangol9) </b><br>
-3. Robin Rannavete - arendaja <b> (viide: https://github.com/RobamaBinBombin) </b><br>
+3. Robin Rannavete - arendaja, lõpuleviija <b> (viide: https://github.com/RobamaBinBombin) </b><br>
 4. Martin Tšerdantsev - arendaja, kliendiga suhtleja, testija <b> (viide: https://github.com/iamcatcus) </b><br>
 
 Kliendid:<br>

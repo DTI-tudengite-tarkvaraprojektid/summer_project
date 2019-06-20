@@ -10,7 +10,7 @@ Iga kord kui kella väärtus jagub 5-ga, võetakse vastav kaart andmebaasist. Ku
 * Rakendus on loodud <b>tarkvara praktika</b> ja <b>ELU-Lauamängu</b> projketi raames.
 
 * Rakenduse pilt:
--
+![Screenshot](SavedImage.JPG)
 
 Kasutatud tehnoloogiad:<br>
 * Visual Studio 2019 Community Edition<br>
@@ -36,5 +36,7 @@ Paigaldada Visual Studio 2019 ja lisada laienduse "Mobile Development with .NET"
 Android SDK Manager-is allalaadida Android SDK-d projekti API tasemega (minimaalne API - 18; soovitatav - 28).<br> 
 Seadistada Android Virtual Device Manager-is virtuaalne seade rakenduse silumiseks, või lubada USB kaudne silumine oma seadmel ning ühendada seda arvutiga ja panna debugger-i käima.<br>
 
-Paigaldusjuhised (20.06.2019):<br>
-Viide paigaldusjuhisele: https://github.com/dangol9/summer_project/tree/master/Install_Juhend
+Dokumendid (20.06.2019):<br>
+Viide paigaldusjuhisele: <b> https://github.com/dangol9/summer_project/tree/master/Install_Juhend <b/>
+Viide testimisdokumentile: <b> https://github.com/dangol9/summer_project/tree/master/App_Testing <b/>
+Viide dokumentatsioonile: <b> https://github.com/dangol9/summer_project/tree/master/Documentation <b/>

@@ -9,7 +9,7 @@ Iga kord kui kella väärtus jagub 5-ga, võetakse vastav kaart andmebaasist. Ku
 
 * Rakendus on loodud <b>tarkvara praktika</b> ja <b>ELU-Lauamängu</b> projketi raames.
 
-* Rakenduse pilt:
+* Rakenduse pilt:<br>
 ![Screenshot](SavedImage.jpg)
 
 Kasutatud tehnoloogiad:<br>

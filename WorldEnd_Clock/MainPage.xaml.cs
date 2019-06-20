@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using WorldEnd_Clock.Service;
+using SQLite;
 
 namespace WorldEnd_Clock
 {
@@ -13,60 +14,67 @@ namespace WorldEnd_Clock
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        int i = 100;
         int currentRoll = 0;
+        int currentCardId = 0;
         int negCounter = 0;
         int posCounter = 0;
         int checkDivide;
+        int negPosCheck = 0;
+        int i = 100;
+        int calculatedScore = 0;
+        int timesPicked = 0;
+
         public MainPage()
         {
             InitializeComponent();
         }
         
-        /*
+       
          protected override void OnAppearing()
         {
             base.OnAppearing();
             DatabaseManager dbman = new DatabaseManager();
-            var cards = dbman.GetAllCards();
+            var cards = dbman.GetAllMainCards();
             List<Cards> ddlSource = new List<Cards>();
-            foreach (var item in cards)
-            {
-                ddlCards.Items.Add(item.Id);
-                ddlCards.Items.Add(item.Kategooria);
-                ddlCards.Items.Add(item.Loodusvarad);
-                ddlCards.Items.Add(item.Nimetus);
-                ddlCards.Items.Add(item.Elustik);
-                ddlCards.Items.Add(item.Turism);
-                ddlCards.Items.Add(item.Rahuolu);
-                ddlCards.Items.Add(item.Skoor);
-                ddlCards.Items.Add(item.Kirjeldus);
-
-            }
         }
-        */
-        
+
         private void Change_Pointer_Value(double pointerValue)
         {
             checkDivide = Convert.ToInt32(pointerValue);
-            if (checkDivide % 5 == 0 && 0 < checkDivide  && checkDivide < 100)
+            if (checkDivide % 5 == 0 && 0 <= checkDivide && checkDivide <= 100)
             {
-                DisplayAlert("Alert", "Dividable!", "OK");
+                if (checkDivide > negPosCheck)
+                {
+                    if (timesPicked <= 2)
+                    {
+                        Navigation.PushAsync(new PosCardPage());
+                    }
+                    else
+                    {
+                        DisplayAlert("Kaardid", "Võetud rohkem kui kaks korda", "OK");
+                    }
+
+                }
+                else
+                {
+                    if (timesPicked <= 2)
+                    {
+                        Navigation.PushAsync(new NegCardPage());
+                    }
+                    else
+                    {
+                        DisplayAlert("Kaardid", "Võetud rohkem kui kaks korda", "OK");
+                    }
+                }
+
             }
             if (pointer.Value >= 100)
             {
+
                 i = 100;
                 pointer.Value = 100;
             }
-            if (pointer.Value == 50)
-            {
-                DisplayAlert("Alert", "Value is 50!", "OK");
-            }
-            if (pointer.Value == 100)
-            {
-                DisplayAlert("Alert", "Value is 100!", "OK");
-            }
-            if(pointer.Value <= 0)
+            if (pointer.Value <= 0)
             {
                 i = 0;
                 pointer.Value = 0;
@@ -75,7 +83,22 @@ namespace WorldEnd_Clock
                 pointer.Value = 100;
                 posCounter = negCounter = 0;
                 labelPos.Text = labelNeg.Text = "";
+
+            }//calculated score is from the card that was scanned by the qr code
+            if (calculatedScore != 0 && calculatedScore > 0)
+            {
+                pointer.Value += calculatedScore;
+                i += calculatedScore;
+                calculatedScore = 0;
+
+            }//same is done here
+            else if (calculatedScore != 0 && calculatedScore < 0)
+            {
+                pointer.Value -= calculatedScore;
+                i -= calculatedScore;
+                calculatedScore = 0;
             }
+
         }
 
         private void Inc_Click(object sender, EventArgs e)
@@ -85,6 +108,7 @@ namespace WorldEnd_Clock
                 posCounter++;
                 labelPos.Text = "+" + Convert.ToString(posCounter);
             }
+            negPosCheck = i;
             i++;
             pointer.Value = Convert.ToDouble(i);
             Change_Pointer_Value(pointer.Value);
@@ -96,6 +120,7 @@ namespace WorldEnd_Clock
                 negCounter++;
                 labelNeg.Text = "-" + Convert.ToString(negCounter);
             }
+            negPosCheck = i;
             i--;
             pointer.Value = Convert.ToDouble(i);
             Change_Pointer_Value(pointer.Value);
@@ -151,13 +176,20 @@ namespace WorldEnd_Clock
                 var result = await scanner.ScanAsync();
                 if (result != null)
                 {
-                    txtBarcode.Text = result;
+                    await Navigation.PushAsync(new ScannedCardPage(result));
                 }
             }
             catch (Exception ex)
             {
                 throw;
             }
+        }
+        public static void CalculateScore(int score)
+        {
+            MainPage page = new MainPage();
+            page.calculatedScore = score;
+            page.timesPicked += 1;
+
         }
     }
 }

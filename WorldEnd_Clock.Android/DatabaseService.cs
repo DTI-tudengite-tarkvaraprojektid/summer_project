@@ -25,9 +25,9 @@ namespace WorldEnd_Clock.Droid
         {
             string sqliteFilename = "Cards.db";
             string dbPath = Path.Combine(Android.App.Application.Context.GetExternalFilesDir(null).ToString(), sqliteFilename);
-           // string documentsDirectoryPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            // string documentsDirectoryPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             // var path = Path.Combine(documentsDirectoryPath, sqliteFilename);
-            
+
             // This is where we copy in our pre-created database
             if (!File.Exists(dbPath))
             {
@@ -44,7 +44,7 @@ namespace WorldEnd_Clock.Droid
                     }
                 }
             }
-            
+
             var conn = new SQLiteConnection(dbPath);
 
             return conn;

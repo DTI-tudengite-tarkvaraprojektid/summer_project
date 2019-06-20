@@ -13,7 +13,7 @@ namespace WorldEnd_Clock.Droid
     [Activity(Label = "WorldEnd_Clock", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
             {
                 PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
                 base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -29,12 +29,6 @@ namespace WorldEnd_Clock.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             ZXing.Mobile.MobileBarcodeScanner.Initialize(Application);
             LoadApplication(new App());
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

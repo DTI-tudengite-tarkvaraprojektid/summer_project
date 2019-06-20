@@ -10,7 +10,10 @@ namespace WorldEnd_Clock
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTEyMDM1QDMxMzcyZTMxMmUzMGRJL1dDOXJubWJJamE5bnAwU0lKcEtFY2t4cWppMktNT3JFMTdubXZsN0E9");
             InitializeComponent();
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarTextColor = Color.Black
+            };
         }
 
         protected override void OnStart()

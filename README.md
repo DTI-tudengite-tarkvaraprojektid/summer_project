@@ -42,4 +42,4 @@ Dokumendid (20.06.2019):<br>
 <b> Viide dokumentatsioonile: <b> https://github.com/dangol9/summer_project/tree/master/Documentation </b><br>
  
 Teised failid:<br>
-<b> Viide APK-le: https://github.com/dangol9/summer_project/tree/master/Install_Juhend <b/><br>
+<b> Viide APK-le: https://github.com/dangol9/summer_project/tree/master/Install_Juhend </b><br>

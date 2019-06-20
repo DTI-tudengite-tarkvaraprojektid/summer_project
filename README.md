@@ -37,4 +37,4 @@ Android SDK Manager-is allalaadida Android SDK-d projekti API tasemega (minimaal
 Seadistada Android Virtual Device Manager-is virtuaalne seade rakenduse silumiseks, või lubada USB kaudne silumine oma seadmel ning ühendada seda arvutiga ja panna debugger-i käima.<br>
 
 Paigaldusjuhised (20.06.2019):<br>
-Viide paigaldusjuhisele: -
+Viide paigaldusjuhisele: https://github.com/dangol9/summer_project/tree/master/Install_Juhend

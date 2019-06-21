@@ -24,7 +24,7 @@ namespace Elu_application
             DatabaseManager databasemanager = new DatabaseManager();
             var cards = databasemanager.GetAllMainCards();
 
-            foreach (var item in cards)
+                     foreach (var item in cards)
             {
                 if (item.UniKood == result)
                 {
@@ -44,12 +44,14 @@ namespace Elu_application
                     ddlCards.Text += "\n";
                     ddlCards.Text += "Kirjeldus : " + (item.Kirjeldus) + "\n";
 
+                    found = true;
+                }
 
-                }
-                else
-                {
-                    ddlCards.Text = "Ei ole antud qrCode-i";
-                }
+            }
+            if(found == false)
+            {
+                ddlCards.Text = "Ei leitud vastavat QR- Koodi";
+            }
             }
         }
     }

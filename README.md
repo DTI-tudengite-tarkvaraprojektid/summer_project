@@ -38,8 +38,8 @@ Seadistada Android Virtual Device Manager-is virtuaalne seade rakenduse silumise
 
 Dokumendid (21.06.2019):<br>
 <b> Viide paigaldusjuhisele: https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Install_Guide.pdf </b><br>
-<b> Viide testimisdokumentile: <b> https://github.com/dangol9/summer_project/tree/master/App_Testing </b><br>
-<b> Viide dokumentatsioonile: <b> https://github.com/dangol9/summer_project/tree/master/Documentation </b><br>
+<b> Viide testimisdokumentile: <b> https://github.com/dangol9/summer_project/blob/master/App_Testing/Testing.pdf </b><br>
+<b> Viide dokumentatsioonile: <b> https://github.com/dangol9/summer_project/blob/master/Doc/documentation.pdf </b><br>
  
 Teised failid:<br>
 <b> Viide APK-le: https://github.com/dangol9/summer_project/tree/master/Install_Juhend </b><br>

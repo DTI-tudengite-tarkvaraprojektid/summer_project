@@ -22,14 +22,14 @@ Kasutatud tehnoloogiad:<br>
 * Plugin.Permissions v3.0<br>
 
 Projekti panustasid:<br>
-1. Andreas Malleus - arendaja, tiimijuht, lõpuleviija <b> (viide: https://github.com/Andreasmalleus) </b><br>
-2. Daniel Golubkov - arendaja, koodi disainer <b> (viide: https://github.com/dangol9) </b><br>
-3. Robin Rannavete - arendaja, lõpuleviija <b> (viide: https://github.com/RobamaBinBombin) </b><br>
-4. Martin Tšerdantsev - arendaja, kliendiga suhtleja, testija <b> (viide: https://github.com/iamcatcus) </b><br>
+1. Andreas Malleus - arendaja, tiimijuht, lõpuleviija <br>
+2. Daniel Golubkov - arendaja, koodi disainer<br>
+3. Robin Rannavete - arendaja, lõpuleviija<br>
+4. Martin Tšerdantsev - arendaja, kliendiga suhtleja, testija<br>
 
 Kliendid:<br>
-* Jaanus Terasmaa - Loodus- ja terviseteaduste instituut - Ökoloogia keskuse juhataja, klient ja kontaktisik - tarnis mängukaartide infomratsiooni faili Google Sheets-is <b> (viide: https://www.tlu.ee/inimesed/jaanus-terasmaa) </b><br>
-* Triinu Jesmin - Digitehnoloogiate instituut - andmeanalüüsi lektor, klient ja kontaktisik <b> (viide: https://www.tlu.ee/inimesed/triinu-jesmin) </b><br>
+* Jaanus Terasmaa - Loodus- ja terviseteaduste instituut - Ökoloogia keskuse juhataja, klient ja kontaktisik - tarnis mängukaartide infomratsiooni faili Google Sheets-is <br>
+* Triinu Jesmin - Digitehnoloogiate instituut - andmeanalüüsi lektor, klient ja kontaktisik<br>
 
 Arenduskeskkonna ülesseadmine: <br>
 Paigaldada Visual Studio 2019 ja lisada laienduse "Mobile Development with .NET".<br>

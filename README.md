@@ -29,6 +29,7 @@ Dokumendid (21.06.2019):<br>
 <b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Doc/documentation.pdf"> dokumentatsioonile</a></b><br>
 
 Teised failid:<br>
+
 <b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk"> APK failile:</a></b><br>
 
 Projekti panustasid:<br>
@@ -42,10 +43,9 @@ Kliendid:<br>
 * Triinu Jesmin - Digitehnoloogiate instituut - andmeanalüüsi lektor, klient ja kontaktisik<br>
 
 Telefonis installeerimine: <br>
-Telefonis tuleb tõmmata alla antud repositooriumis APK fail, mis asub Install_juhend kaustas.<br>
+Telefonis tuleb tõmmata alla antud repositooriumis APK fail, mis asub <a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk">Install_juhend </a>kaustas.<br>
 Peale rakenduse alla tõmbamist, tuleb ka see installerida ning alles siis tekib rakenduse käivitamise võimalus <br>
 Vajaminev õpetus on allpool dokumentide loetelus <br>
-
 
 Arenduskeskkonna ülesseadmine: <br>
 Paigaldada Visual Studio 2019 ja lisada laienduse "Mobile Development with .NET".<br>

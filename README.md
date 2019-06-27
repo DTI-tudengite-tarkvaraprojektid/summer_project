@@ -3,7 +3,7 @@ Tellijad: Triinu Jesmin, Jaanus Terasmaa<br>
 Tarnijad: Andreas Malleus, Daniel Golubkov, Robin Rannavete, Martin Tšerdantsev<br>
 
 Projekti eesmärk on  ELU projekti maailmalõpu lauamängule maailmalõpukella rakendus arendada. <br>
-Rakenduses saab kella väärtust muuta, mängukaarte skaneerida ja tagastatud väärtuse järgi kaarte andmebaasist võtta. <br>
+Rakenduses saab kella väärtust muuta, mängukaarte skanneerida ja tagastatud väärtuse järgi kaarte andmebaasist võtta. <br>
 Andmebaasist võetud kaarte kuvatakse ekraanil ja nende väärtus lisatakse kellale juurde. <br>
 Iga kord kui kella väärtus jagub 5-ga, võetakse vastav kaart andmebaasist. Kui kell liigub üles, võetakse positiivse mõjuga kaart, kui alla, negatiivse mõjuga kaart.<br>
 
@@ -30,6 +30,12 @@ Projekti panustasid:<br>
 Kliendid:<br>
 * Jaanus Terasmaa - Loodus- ja terviseteaduste instituut - Ökoloogia keskuse juhataja, klient ja kontaktisik - tarnis mängukaartide infomratsiooni faili Google Sheets-is <br>
 * Triinu Jesmin - Digitehnoloogiate instituut - andmeanalüüsi lektor, klient ja kontaktisik<br>
+
+Telefonis installeerimine: <br>
+Telefonis tuleb tõmmata alla antud repositooriumis APK fail, mis asub Install_juhend kaustas.<br>
+Peale rakenduse alla tõmbamist, tuleb ka see installerida ning alles siis tekib rakenduse käivitamise võimalus <br>
+Vajaminev õpetus on allpool dokumentide loetelus <br>
+
 
 Arenduskeskkonna ülesseadmine: <br>
 Paigaldada Visual Studio 2019 ja lisada laienduse "Mobile Development with .NET".<br>

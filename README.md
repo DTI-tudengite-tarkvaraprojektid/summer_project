@@ -51,3 +51,4 @@ Dokumendid (21.06.2019):<br>
  
 Teised failid:<br>
 <b> Viide APK-le: https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk </b><br>
+[a link](https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk)

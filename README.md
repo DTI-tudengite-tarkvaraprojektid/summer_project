@@ -23,7 +23,7 @@ Kasutatud tehnoloogiad:<br>
 
 Dokumendid (21.06.2019):<br>
 
-<b>Viide paigaldusjuhisele<a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20APK%20failiga.pdf">APK failiga</a></b><br>
+<b>Viide paigaldusjuhisele <a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20APK%20failiga.pdf">APK failiga</a></b><br>
 <b>Viide paigaldusjuhisele <a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20visual%20studios.pdf">Visual Studios</a></b><br>
 <b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/App_Testing/Testing.pdf"> estimisdokumentile</a></b><br>
 <b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Doc/documentation.pdf"> dokumentatsioonile</a></b><br>

@@ -21,6 +21,17 @@ Kasutatud tehnoloogiad:<br>
 * ZXing.Net.Mobile v2.4<br>
 * Plugin.Permissions v3.0<br>
 
+Dokumendid (21.06.2019):<br>
+
+<b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20APK%20failiga.pdf">paigaldusjuhisele </a>APK failiga telefonis</b><br>
+<b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20visual%20studios.pdf">paigaldusjuhisele </a>Visual Studios</b><br>
+<b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/App_Testing/Testing.pdf"> estimisdokumentile</a></b><br>
+<b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Doc/documentation.pdf"> dokumentatsioonile</a></b><br>
+
+Teised failid:<br>
+<b> Viide APK-le: https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk </b><br>
+<b>Viide<a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk"> APK failile:</a></b><br>
+
 Projekti panustasid:<br>
 1. Andreas Malleus - arendaja, tiimijuht, lõpuleviija <br>
 2. Daniel Golubkov - arendaja, koodi disainer<br>
@@ -41,14 +52,3 @@ Arenduskeskkonna ülesseadmine: <br>
 Paigaldada Visual Studio 2019 ja lisada laienduse "Mobile Development with .NET".<br>
 Android SDK Manager-is allalaadida Android SDK-d projekti API tasemega (minimaalne API - 18; soovitatav - 28).<br> 
 Seadistada Android Virtual Device Manager-is virtuaalne seade rakenduse silumiseks, või lubada USB kaudne silumine oma seadmel ning ühendada seda arvutiga ja panna debugger-i käima.<br>
-
-Dokumendid (21.06.2019):<br>
-<b> Viide paigaldusjuhisele APK failiga telefonis:
- https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20APK%20failiga.pdf </b><br>
-<b> Viide paigaldusjuhisele Visual Studios: https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Installeerimise%20juhis%20visual%20studios.pdf </b><br>
-<b> Viide testimisdokumentile: <b> https://github.com/dangol9/summer_project/blob/master/App_Testing/Testing.pdf </b><br>
-<b> Viide dokumentatsioonile: <b> https://github.com/dangol9/summer_project/blob/master/Doc/documentation.pdf </b><br>
- 
-Teised failid:<br>
-<b> Viide APK-le: https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk </b><br>
-<p><a href="https://github.com/dangol9/summer_project/blob/master/Install_Juhend/Elu_rakendus_install.apk">Vaata</a></p>
